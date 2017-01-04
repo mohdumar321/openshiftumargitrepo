@@ -1,12 +1,10 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.java.demo</groupId>
-  <artifactId>basicwebapplication</artifactId>
+  <groupId>umar</groupId>
+  <artifactId>umar</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>basicapp</name>
-   <packaging>war</packaging>
-  <description>java app</description>
 </project>
+
 <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.7</maven.compiler.source>
@@ -30,7 +28,7 @@
      <!-- http://maven.apache.org/guides/mini/guide-building-for-different-environments.html -->
      <id>openshift</id>
      <build>
-        <finalName>basicwebapplication</finalName>
+        <finalName></finalName>
         <plugins>
           <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -39,7 +37,7 @@
                 <configuration>
                     <failOnMissingWebXml>false</failOnMissingWebXml>
                     <outputDirectory>target</outputDirectory>
-              		  <warName>ROOT</warName>
+              		
                 </configuration>
             </plugin>
         </plugins>
