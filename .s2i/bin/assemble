@@ -1,7 +1,10 @@
-
-
 #!/bin/bash
-
+echo "from umar desktop to openshift start"
+echo "from umar desktop to openshift start"
+echo "from umar desktop to openshift start"
+echo "from umar desktop to openshift start"
+echo "from umar desktop to openshift start"
+echo "from umar desktop to openshift start"
 PID_FILE=/tmp/wildfly.pid
 
 # restore maven dependencies downloaded in a previous build,
@@ -9,29 +12,6 @@ PID_FILE=/tmp/wildfly.pid
 # /opt/s2i/destination/artifacts will only be present in the incremental build scenario
 # in which the target image name is an existing docker image which contains
 # dependencies from a prior build execution.
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
-echo "from umar desktop to openshift start"
 function restore_saved_artifacts() {
   if [ "$(ls -A /opt/s2i/destination/artifacts/ 2>/dev/null)" ]; then
     echo -n "Restoring saved artifacts from prior build..."
@@ -141,7 +121,8 @@ function waitondeployments() {
     fi
   fi
 }
-
+echo "from umar desktop to openshift between"
+echo "from umar desktop to openshift between"
 # Check if the server http port is up
 function ishttpup() {
   count=0
@@ -373,8 +354,6 @@ echo "...done"
 
 # remove admin user
 #sed -i '/^#/! s/^/#/' /wildfly/{standalone,domain}/configuration/mgmt-{groups,users}.properties
-echo "from umar desktop to openshift end"
-echo "from umar desktop to openshift end"
 echo "from umar desktop to openshift end"
 echo "from umar desktop to openshift end"
 echo "from umar desktop to openshift end"
